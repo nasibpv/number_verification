@@ -7,7 +7,7 @@
 body {
     align-items: center;
     background: linear-gradient(150deg, #44dadaf0, #ea08aede,rgba(197, 47, 197, 0.756));
-  
+    height: 100vh;
 }
 
 .container {
