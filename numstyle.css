@@ -7,7 +7,7 @@
 body {
     align-items: center;
     background: linear-gradient(150deg, #44dadaf0, #ea08aede,rgba(197, 47, 197, 0.756));
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container {
@@ -56,6 +56,7 @@ p{
     .col-form-label{
         font-size: 17px;
     }
+    
 }
 @media screen and (max-width: 541px) {
     .container{
@@ -65,9 +66,7 @@ p{
         .col-form-label{
             font-size: 22px;
         }
-        body{
-            height: 100vh;
-        }
+       
     }
 @media screen and (max-width: 1024px) {
         .container{
@@ -87,12 +86,10 @@ p{
             p{
                 font-size: 27px;
             }
-            body{
-                height: 100vh;
-            }
+            
         }
         @media screen and (min-height: 1180px) {
             body{
-                height: 99vh;
+                height: 100vh;
             }
             }
