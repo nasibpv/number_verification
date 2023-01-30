@@ -11,15 +11,16 @@ var requestOptions = {
 };
 
 function search() {
-  results.innerHTML=`<div class="d-flex justify-content-center loader">
-  <div class="spinner-border" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-</div>`
+  
     num=floatingNumber.value
     cun=floatingInput.value
     if (cun.startsWith("+91")) {
         if (num.length == 10 ) {
+          results.innerHTML=`<div class="d-flex justify-content-center loader">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>`
             fetch(`https://api.apilayer.com/number_verification/validate?number=${cun}${num}`, requestOptions).then(response => response.json()).then(result1 => displaydata(result1))
 
         }
