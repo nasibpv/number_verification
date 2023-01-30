@@ -32,7 +32,11 @@ function search() {
     else {
         // console.log('okk');
         // fetch(`https://api.apilayer.com/number_verification/validate?number=${cum}${num}`, requestOptions).then(response => response.json()).then(result1 => displaydata(result1))
-        fetch(`https://api.apilayer.com/number_verification/validate?number=${cum}${num}`, requestOptions).then(response => response.json()).then(result1 => displaydata(result1))
+        results.innerHTML=`<div class="d-flex justify-content-center loader">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>`
+  fetch(`https://api.apilayer.com/number_verification/validate?number=${cun}${num}`, requestOptions).then(response => response.json()).then(result1 => displaydata(result1))
 
       }
 }
