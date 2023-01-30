@@ -49,6 +49,8 @@ p{
     text-decoration: underline;
     font-size: 22px;
 }
+
+
 @media screen and (max-width: 412px) {
 .container{
         width: 80%;
